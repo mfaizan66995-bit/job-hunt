@@ -1,0 +1,25 @@
+{
+  "name": "job-hunt-agent",
+  "version": "1.0.0",
+  "description": "Intelligent automated job application agent",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "keywords": [
+    "job",
+    "agent",
+    "automation",
+    "application",
+    "resume"
+  ],
+  "author": "",
+  "license": "MIT"
+}
